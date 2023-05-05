@@ -1,8 +1,8 @@
-$ brainome dataset.csv
+$ brainome -f NN -split 80 -e 5 dataset.csv
 Brainome Table Compiler v2.0-172-prod
 Copyright (c) 2019-2022 Brainome, Inc. All Rights Reserved.
 Licensed to:                 Demo User  (Evaluation)
-Expiration Date:             2023-12-31   241 days left
+Expiration Date:             2023-12-31   240 days left
 Maximum File Size:           30 GB
 Maximum Instances:           unlimited
 Maximum Attributes:          unlimited
@@ -10,9 +10,9 @@ Maximum Classes:             unlimited
 Connected to:                daimensions.brainome.ai  (local execution)
 
 Command:
-    brainome dataset.csv
+    brainome -f NN -split 80 -e 5 dataset.csv
 
-Start Time:                 05/04/2023, 15:10 Pacific Daylight Time
+Start Time:                 05/05/2023, 10:01 Pacific Daylight Time
 
 Pre-training measurements...validation...
 
@@ -42,25 +42,24 @@ Learnability:
 
 Recommendations:
     Warning: Attribute count greater than number of instances. Collect more data to get better results.
-    If predictor accuracy is insufficient, try using the effort option -e with a value of 5 or more to increase training time.
 
 
-Validating NN predictor....
+Validating NN predictor...
 Predictor:
     Classifier Type:              Neural Network
     System Type:                  Binary classifier
-    Training / Validation Split:  50% : 50%
+    Training / Validation Split:  80% : 20%
     Accuracy:
       Best-guess accuracy:        50.04%
-      Training accuracy:          85.80% (514/599 correct)
-      Validation Accuracy:        55.33% (332/600 correct)
-      Combined Model Accuracy:    70.55% (846/1199 correct)
+      Training accuracy:          72.05% (691/959 correct)
+      Validation Accuracy:        64.16% (154/240 correct)
+      Combined Model Accuracy:    70.47% (845/1199 correct)
 
 
-    Model Capacity (MEC):       351    bits
-    Generalization Ratio:         1.46 bits/bit
-    Percent of Data Memorized:   136.99%
-    Resilience to Noise:          -0.16 dB
+    Model Capacity (MEC):       137    bits
+    Generalization Ratio:         5.04 bits/bit
+    Percent of Data Memorized:    39.68%
+    Resilience to Noise:          -0.70 dB
 
 
 
@@ -68,44 +67,32 @@ Predictor:
     Training Confusion Matrix:
               Actual | Predicted
               ------ | ---------
-                   0 |   266    33
-                   1 |    52   248
+                   0 |   329   150
+                   1 |   118   362
 
     Validation Confusion Matrix:
               Actual | Predicted
               ------ | ---------
-                   0 |   140   160
-                   1 |   108   192
+                   0 |    80    40
+                   1 |    46    74
 
     Training Accuracy by Class:
                    0 |    TP    FP    TN    FN     TPR      TNR      PPV      NPV       F1       TS
                    - | ----- ----- ----- ----- -------- -------- -------- -------- -------- --------
-                   0 |   266    52   248    33   88.96%   82.67%   83.65%   88.26%   86.22%   75.78%
-                   1 |   248    33   266    52   82.67%   88.96%   88.26%   83.65%   85.37%   74.47%
+                   0 |   329   118   362   150   68.68%   75.42%   73.60%   70.70%   71.06%   55.11%
+                   1 |   362   150   329   118   75.42%   68.68%   70.70%   73.60%   72.98%   57.46%
 
     Validation Accuracy by Class:
                    0 |    TP    FP    TN    FN     TPR      TNR      PPV      NPV       F1       TS
                    - | ----- ----- ----- ----- -------- -------- -------- -------- -------- --------
-                   0 |   140   108   192   160   46.67%   64.00%   56.45%   54.55%   51.09%   34.31%
-                   1 |   192   160   140   108   64.00%   46.67%   54.55%   56.45%   58.90%   41.74%
+                   0 |    80    46    74    40   66.67%   61.67%   63.49%   64.91%   65.04%   48.19%
+                   1 |    74    40    80    46   61.67%   66.67%   64.91%   63.49%   63.25%   46.25%
 
 
 
-AutoML Summary:
-                                        RF        NN*       DT       SVM
-                                    -------   -------   -------   -------
-    Best-guess Accuracy:             50.04%    50.04%    50.04%    50.04%
-    Training Accuracy:              100.00%    85.80%   100.00%   100.00%
-    Validation Accuracy:             63.00%    55.33%    53.33%    56.66%
-    Model Capacity (bits):              75       351       323      7057
-    Gen. Ratio (bits/bit):            7.98      1.46      1.85      0.08
-    Pct. Data Memorized:             25.06%   136.99%   108.11%  2500.01%
-    Resilience to Noise (db):        -0.90     -0.16     -0.27      1.10
 Messages:
-    Defaulted to classification problem.
     Exception encountered while cleaning tmp file
-    NN chosen as best model out of 4
     Writing NN predictor file a.py
 
-End Time:           05/04/2023, 15:14 Pacific Daylight Time
-Runtime Duration:   4m 6s
+End Time:           05/05/2023, 10:06 Pacific Daylight Time
+Runtime Duration:   5m 21s
