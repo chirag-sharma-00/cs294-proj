@@ -1,0 +1,161 @@
+$ brainome -headerless -rank 100 -measureonly dataset.csv
+Brainome Table Compiler v2.0-172-prod
+Copyright (c) 2019-2022 Brainome, Inc. All Rights Reserved.
+Licensed to:                 Demo User  (Evaluation)
+Expiration Date:             2023-12-31   235 days left
+Maximum File Size:           30 GB
+Maximum Instances:           unlimited
+Maximum Attributes:          unlimited
+Maximum Classes:             unlimited
+Connected to:                daimensions.brainome.ai  (local execution)
+
+Command:
+    brainome -headerless -rank 100 -measureonly dataset.csv
+
+Start Time:                 05/10/2023, 23:54 Pacific Daylight Time
+
+Ranking attributes...
+Attribute Ranking:
+    Columns selected:           5521, 3914, 5691, 1303, 392, 2710, 2955, 1892, 3670, 1613, 3453, 7039, 803, 3800, 5103, 6770, 2210, 5184, 4530, 5466, 3278, 5020, 3286, 1472, 3153, 3536, 3569, 1628, 2145, 3050, 3157, 3437, 3595, 3945, 6918, 4849, 912, 1567, 2296, 5548, 1142, 72, 1028, 2037, 1899, 2373, 3755, 6070, 6603, 1038, 1951, 2124, 2952, 3073, 4513, 4715, 4886, 7033, 4698, 4712, 6775, 1815, 2042, 2064, 2235, 3040, 3310, 3369, 3514, 3533, 4091, 4272, 1464, 3695, 1369, 1428, 1621, 1691, 1895, 1984, 2121, 2201, 2871, 3591, 3632, 4083, 5310, 6082, 6398, 6555, 6760, 1885, 4935, 5733, 971, 1626, 1872, 2154, 2261, 2376
+    Risk of coincidental column correlation:    0.0%
+
+    Test Accuracy Progression:
+                                         5521 :   62.08%
+                                         3914 :   61.25% change   -0.83%
+                                         5691 :   61.08% change   -0.17%
+                                         1303 :   60.92% change   -0.17%
+                                          392 :   60.83% change   -0.08%
+                                         2710 :   60.83% change   +0.00%
+                                         2955 :   60.75% change   -0.08%
+                                         1892 :   60.67% change   -0.08%
+                                         3670 :   60.67% change   +0.00%
+                                         1613 :   60.58% change   -0.08%
+                                         3453 :   60.58% change   +0.00%
+                                         7039 :   60.58% change   +0.00%
+                                          803 :   60.50% change   -0.08%
+                                         3800 :   60.50% change   +0.00%
+                                         5103 :   60.50% change   +0.00%
+                                         6770 :   60.50% change   +0.00%
+                                         2210 :   60.42% change   -0.08%
+                                         5184 :   60.42% change   -0.00%
+                                         4530 :   60.33% change   -0.08%
+                                         5466 :   60.33% change   -0.00%
+                                         3278 :   60.25% change   -0.08%
+                                         5020 :   60.25% change   +0.00%
+                                         3286 :   60.25% change   -0.00%
+                                         1472 :   60.17% change   -0.08%
+                                         3153 :   60.17% change   +0.00%
+                                         3536 :   60.17% change   +0.00%
+                                         3569 :   60.17% change   +0.00%
+                                         1628 :   60.08% change   -0.08%
+                                         2145 :   60.08% change   +0.00%
+                                         3050 :   60.08% change   -0.00%
+                                         3157 :   60.08% change   +0.00%
+                                         3437 :   60.08% change   +0.00%
+                                         3595 :   60.08% change   +0.00%
+                                         3945 :   60.08% change   +0.00%
+                                         6918 :   60.08% change   +0.00%
+                                         4849 :   60.08% change   -0.00%
+                                          912 :   60.00% change   -0.08%
+                                         1567 :   60.00% change   +0.00%
+                                         2296 :   60.00% change   +0.00%
+                                         5548 :   60.00% change   +0.00%
+                                         1142 :   60.00% change   -0.00%
+                                           72 :   59.92% change   -0.08%
+                                         1028 :   59.92% change   +0.00%
+                                         2037 :   59.92% change   +0.00%
+                                         1899 :   59.92% change   -0.00%
+                                         2373 :   59.92% change   +0.00%
+                                         3755 :   59.92% change   +0.00%
+                                         6070 :   59.92% change   +0.00%
+                                         6603 :   59.92% change   +0.00%
+                                         1038 :   59.83% change   -0.08%
+                                         1951 :   59.83% change   +0.00%
+                                         2124 :   59.83% change   +0.00%
+                                         2952 :   59.83% change   +0.00%
+                                         3073 :   59.83% change   +0.00%
+                                         4513 :   59.83% change   +0.00%
+                                         4715 :   59.83% change   +0.00%
+                                         4886 :   59.83% change   +0.00%
+                                         7033 :   59.83% change   +0.00%
+                                         4698 :   59.83% change   -0.00%
+                                         4712 :   59.83% change   +0.00%
+                                         6775 :   59.83% change   +0.00%
+                                         1815 :   59.75% change   -0.08%
+                                         2042 :   59.75% change   +0.00%
+                                         2064 :   59.75% change   +0.00%
+                                         2235 :   59.75% change   +0.00%
+                                         3040 :   59.75% change   +0.00%
+                                         3310 :   59.75% change   +0.00%
+                                         3369 :   59.75% change   +0.00%
+                                         3514 :   59.75% change   +0.00%
+                                         3533 :   59.75% change   +0.00%
+                                         4091 :   59.75% change   +0.00%
+                                         4272 :   59.75% change   +0.00%
+                                         1464 :   59.75% change   -0.00%
+                                         3695 :   59.67% change   -0.08%
+                                         1369 :   59.67% change   -0.00%
+                                         1428 :   59.67% change   +0.00%
+                                         1621 :   59.67% change   +0.00%
+                                         1691 :   59.67% change   +0.00%
+                                         1895 :   59.67% change   +0.00%
+                                         1984 :   59.67% change   +0.00%
+                                         2121 :   59.67% change   +0.00%
+                                         2201 :   59.67% change   +0.00%
+                                         2871 :   59.67% change   +0.00%
+                                         3591 :   59.67% change   +0.00%
+                                         3632 :   59.67% change   +0.00%
+                                         4083 :   59.67% change   +0.00%
+                                         5310 :   59.67% change   +0.00%
+                                         6082 :   59.67% change   +0.00%
+                                         6398 :   59.67% change   +0.00%
+                                         6555 :   59.67% change   +0.00%
+                                         6760 :   59.67% change   +0.00%
+                                         1885 :   59.67% change   -0.00%
+                                         4935 :   59.67% change   +0.00%
+                                         5733 :   59.67% change   +0.00%
+                                          971 :   59.58% change   -0.08%
+                                         1626 :   59.58% change   +0.00%
+                                         1872 :   59.58% change   +0.00%
+                                         2154 :   59.58% change   +0.00%
+                                         2261 :   59.58% change   +0.00%
+                                         2376 :   59.58% change   +0.00%
+
+Pre-training measurements...validation...
+
+Pre-training Measurements
+Data:
+    Input:                      dataset.csv (headerless csv)
+    Target Column:              7056
+    Number of instances:       1200
+    Number of attributes:       100 out of 7056
+    Number of classes:            2
+
+Class Balance:
+                               0: 50.00%
+                               1: 50.00%
+
+Learnability:
+    Best guess accuracy:          50.00%
+    Data Sufficiency:             Not enough data to generalize. [red]
+
+    Capacity Progression           at [ 5%, 10%, 20%, 40%, 80%, 100% ]
+                                       6,   7,   8,   9,   9,  10
+
+                                         RF       NN        DT       SVM
+                                      ------   ------    ------    ------
+    Expected Training Accuracy:      100.00%    ----     97.08%      ----
+    Expected Validation Accuracy:     64.50%    ----     52.17%      ----
+
+Recommendations:
+    If predictor accuracy is insufficient, try using the effort option -e with a value of 5 or more to increase training time.
+
+Time to Build Estimates:
+    Decision Tree:                a few seconds
+
+
+Messages:
+    Exception encountered while cleaning tmp file
+
+End Time:           05/11/2023, 00:26 Pacific Daylight Time
+Runtime Duration:   31m 38s

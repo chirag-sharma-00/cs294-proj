@@ -1,0 +1,98 @@
+$ brainome -headerless -split 80 -f NN -e 5 dataset.csv
+Brainome Table Compiler v2.0-172-prod
+Copyright (c) 2019-2022 Brainome, Inc. All Rights Reserved.
+Licensed to:                 Demo User  (Evaluation)
+Expiration Date:             2023-12-31   234 days left
+Maximum File Size:           30 GB
+Maximum Instances:           unlimited
+Maximum Attributes:          unlimited
+Maximum Classes:             unlimited
+Connected to:                daimensions.brainome.ai  (local execution)
+
+Command:
+    brainome -headerless -split 80 -f NN -e 5 dataset.csv
+
+Start Time:                 05/11/2023, 02:07 Pacific Daylight Time
+
+Pre-training measurements...validation...
+
+Pre-training Measurements
+Data:
+    Input:                      dataset.csv (headerless csv)
+    Target Column:              7056
+    Number of instances:       1200
+    Number of attributes:      7056 out of 7056
+    Number of classes:            2
+
+Class Balance:
+                               0: 50.00%
+                               1: 50.00%
+
+Learnability:
+    Best guess accuracy:          50.00%
+    Data Sufficiency:             Not enough data to generalize. [red]
+
+    Capacity Progression           at [ 5%, 10%, 20%, 40%, 80%, 100% ]
+                                       6,   8,   8,   9,   9,  10
+
+                                         RF       NN        DT       SVM
+                                      ------   ------    ------    ------
+    Expected Training Accuracy:      100.00%    ----    100.00%      ----
+    Expected Validation Accuracy:     63.83%    ----     52.42%      ----
+
+Recommendations:
+    Warning: Attribute count greater than number of instances. Collect more data to get better results.
+
+
+Validating NN predictor...
+Predictor:
+    Classifier Type:              Neural Network
+    System Type:                  Binary classifier
+    Training / Validation Split:  80% : 20%
+    Accuracy:
+      Best-guess accuracy:        50.00%
+      Training accuracy:          50.00% (480/960 correct)
+      Validation Accuracy:        50.00% (120/240 correct)
+      Combined Model Accuracy:    50.00% (600/1200 correct)
+
+
+    Model Capacity (MEC):     14117    bits
+    Generalization Ratio:         0.03 bits/bit
+    Percent of Data Memorized:  6666.67%
+    Resilience to Noise:           1.52 dB
+
+
+
+
+    Training Confusion Matrix:
+              Actual | Predicted
+              ------ | ---------
+                   0 |     0   480
+                   1 |     0   480
+
+    Validation Confusion Matrix:
+              Actual | Predicted
+              ------ | ---------
+                   0 |     0   120
+                   1 |     0   120
+
+    Training Accuracy by Class:
+                7056 |    TP    FP    TN    FN     TPR      TNR      PPV      NPV       F1       TS
+                ---- | ----- ----- ----- ----- -------- -------- -------- -------- -------- --------
+                   0 |     0     0   480   480    0.00%  100.00%      N/A   50.00%    0.00%    0.00%
+                   1 |   480   480     0     0  100.00%    0.00%   50.00%      N/A   66.67%   50.00%
+
+    Validation Accuracy by Class:
+                7056 |    TP    FP    TN    FN     TPR      TNR      PPV      NPV       F1       TS
+                ---- | ----- ----- ----- ----- -------- -------- -------- -------- -------- --------
+                   0 |     0     0   120   120    0.00%  100.00%      N/A   50.00%    0.00%    0.00%
+                   1 |   120   120     0     0  100.00%    0.00%   50.00%      N/A   66.67%   50.00%
+
+
+
+Messages:
+    Exception encountered while cleaning tmp file
+    Writing NN predictor file a.py
+
+End Time:           05/11/2023, 02:17 Pacific Daylight Time
+Runtime Duration:   9m 24s
