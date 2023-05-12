@@ -72,13 +72,17 @@ class FCN(nn.Module):
     
 
 
-for train_data_percent in [.1, .2, .3, .4, .5, .6, .7, .8]:
+for train_data_percent in [.05, .1, .2, .4, .8, 1.0]:
 
     # 80/20 train/val split
-    train_size = int(train_data_percent * len(train_set))
+    train_size = int(.8 * len(train_set))
     val_size = int(.2 * len(train_set))
-    unused_size = len(train_set) - train_size - val_size
-    cur_train_set, cur_val_set, _ = random_split(train_set, [train_size, val_size, unused_size])
+    # unused_size = len(train_set) - train_size - val_size
+    cur_train_set, cur_val_set = random_split(train_set, [train_size, val_size])
+
+    used_train_size = int(train_data_percent * len(cur_train_set))
+    unused_train_size = len(cur_train_set) - used_train_size
+    cur_train_set, _ = random_split(cur_train_set, [used_train_size, unused_train_size])
     # Batch size
     batch_size = 16
 

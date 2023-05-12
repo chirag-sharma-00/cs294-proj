@@ -5,6 +5,8 @@ train_loss = []
 val_loss = []
 train_acc = []
 val_acc = []
+train_percent_overfit = []
+val_percent_overfit = []
 
 with open("training_log.txt", "r") as f:
     f.readline()
@@ -16,7 +18,10 @@ with open("training_log.txt", "r") as f:
         val_loss.append(float(split_line[3]))
         val_acc.append(float(split_line[4]))
 
-x_labels = [.1, .2, .3, .4, .5, .6, .7, .8]
+        train_percent_overfit.append(float(split_line[0]) * float(split_line[2]))
+        val_percent_overfit.append(float(split_line[0]) * float(split_line[4]))
+
+x_labels = [.1, .2, .3, .4, .5, .6, .7, .8, .9, 1.0]
 
 plt.figure()
 plt.plot(train_percent, train_loss, label="Train loss")
@@ -28,10 +33,11 @@ plt.legend()
 plt.savefig("gen_loss_curves.png", dpi=200)
 
 plt.figure()
-plt.plot(train_percent, train_acc, label="Train accuracy")
-plt.plot(train_percent, val_acc, label="Validation accuracy")
+plt.plot(train_percent, train_percent_overfit, label="Train percent overfit")
+plt.plot(train_percent, val_percent_overfit, label="Validation percent overfit")
 plt.xlabel("Train Data Percentage")
 plt.xticks(x_labels, x_labels)
-plt.ylabel("Accuracy")
+plt.yticks(x_labels, x_labels)
+plt.ylabel(f"MEC % overfitting for 100% accuracy")
 plt.legend()
 plt.savefig("gen_acc_curves.png", dpi=200)
